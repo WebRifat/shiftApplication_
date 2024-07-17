@@ -1,0 +1,472 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/** common css */
+:root{
+    --primaryFont: "Inter", sans-serif;
+    --secondaryFont: "Arial", sans-serif;
+    --primaryColor: 
+    --secondaryColor: 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,ul,ol,li{
+    margin: 0;
+    padding: 0;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/** common css */
+/** navBar Starts */
+nav{
+    border-bottom: 1px solid #E6E6E6;
+    background: var(--Default-White, #FFF);
+    
+}
+nav .menu{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.profileInfo{
+    padding-top: 20px ;
+    padding-bottom: 20px;
+    
+}
+.profilePic{
+    position: relative;
+}
+.info{
+    position: absolute;
+    color: black;
+    background-color: white;
+    width: 191px;
+    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+    border-radius: 8px;
+    border-top: 1px solid rgb(245, 235, 235);
+    left: -90px;
+    top: 0;
+    /* display: block; */
+    transform: scale(0);
+    transition: 0.3s;
+    
+}
+nav.active .info{
+    transform: scale(1);
+    transition: 1s;
+    top: 40px;
+}
+.info ul li{
+    list-style: none;
+    padding: 10px 14px;
+    cursor: pointer;
+
+}
+.info ul li:hover{
+    background: var(--Gray-50, #F9FAFB);
+}
+.info ul li:nth-child(3) img{
+    width: 16px;
+    object-fit: cover;
+}
+.info ul li span{
+    padding-right: 8px;
+}
+.info ul li img{
+    margin-right: 8px;
+}
+.profilePic img{
+    width: 36px;
+    cursor: pointer;
+}
+.profileName h5{
+    color: #101828;
+    font-family: var(--primaryFont);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    /* line-height: 13px; 81.25% */
+}
+.profileName p{
+    color: var(--colors-gray-light-mode-500, #667085);
+    font-family: var(--primaryFont);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    display: block;
+    cursor: pointer;
+    /* line-height: 13px; 108.333% */
+}
+.notification{
+    margin-right: 8px;
+    color: #878787;
+    width: 17.574px;
+    height: 20px;
+    cursor: pointer;
+}
+.profilePic{
+    margin-right: 12px;
+}
+/** navBar ends */
+/** DashBoard Section Starts here */
+.dashBoard{
+    margin-top: 30px;
+}
+.heading h4{
+    color: var(--gray-900, #18181B);
+    font-family: var(--primaryFont);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px; /* 105% */
+}
+.heading p{
+    color: var(--Gray-500, var(--colors-gray-light-mode-500, #667085));
+
+    /* Text sm/Regular */
+    font-family: var(--primaryFont);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
+
+.btn{
+    color: var(--White, #FFF);
+    border-radius: 8px;
+    border: 1px solid var(--Blue-500, #0D6EFD);
+    background: var(--Blue-500, #0D6EFD);
+    /* padding: 10px 18px; */
+    width: 191px;
+
+/* Shadow/xs */
+box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    /* Text md/Semibold */
+    font-family: var(--primaryFont);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    transition: 0.5s;
+}
+.btn h4{
+    color: var(--White, #FFF);
+
+    /* Text md/Semibold */
+    font-family: var(--primaryFont);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    
+}
+.btn:hover{
+    background-color: #2963b9;
+}
+.btn .plus{
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+aside{
+    position: fixed;
+    width: 80%;
+    max-width: 330px;
+    border-right: 1px solid #E6E6E6;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.50) 0%, rgba(245, 245, 245, 0.00) 100%), linear-gradient(180deg, #DEE9FF 0%, #FFF 100%);
+    top: 0;
+    left: 0;
+    min-height: 1000vh;
+    z-index: 999;
+    
+}
+.logo2{
+    margin-top: 28px;
+    cursor: pointer;
+    margin-bottom: 29px;
+}
+.logo2 img{
+    width: 20px;
+    height: 33.103px;
+    object-fit: cover;
+    margin-right: 12px;
+
+    
+}
+.logo2 h4{
+    color: #212121;
+    font-family: var(--secondaryFont);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 90.909% */
+}
+.dashBoardTable{
+    /* background-color: red; */
+    margin-bottom: 24px;
+    
+    
+}
+.applicationBtn2{
+    width: 232px;
+    border: none;
+    background-color: #0D6EFD;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 0;
+    padding-left: 18px;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+.applicationBtn2:hover{
+    background-color: #234e8f;
+}
+.applicationBtn2.another{
+    background: var(--Blue-100, #CFE2FF);
+    margin-bottom: 10px;
+    
+}
+.applicationBtn2.another:hover{
+    background-color: var(--Blue-100, #c7cdd6);
+}
+.applicationBtn2.another h5{
+    color: #0D6EFD;
+    
+}
+.plus2.another{
+    color: #0D6EFD;
+}
+.applicationBtn2 h5{
+    color: var(--White, #FFF);
+    font-family: var(--primaryFont);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+.plus2{
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    
+}
+.applicationBtn{
+    border: none;
+    background-color: #0D6EFD;
+    width: 191px;
+    color: white;
+    padding: 10px 0;
+    border-radius: 8px;
+    color: var(--White, #FFF);
+
+/* Text md/Semibold */
+    font-family: var(--primaryFont);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    transition: 0.5s;
+}
+.applicationBtn:hover{
+    background-color: #235db4;
+}
+.plus{
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    margin-left: 18px;
+}
+.dashBoardCnt h4{
+    color: var(--gray-900, #18181B);
+    font-family: var(--primaryFont);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px; /* 105% */
+
+}
+.dashBoardCnt p{
+    color: var(--Gray-500, var(--colors-gray-light-mode-500, #667085));
+
+    /* Text sm/Regular */
+    font-family: var(--primaryFont);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    
+
+}
+.applicationName{
+    color: var(--Gray-900, #101828);
+
+    /* Text lg/Medium */
+    font-family: var(--primaryFont);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 155.556% */
+}
+.dashboardTab1{
+    padding: 20px 24px;
+    border: 1px solid black;
+    border-radius: 8px 8px 0 0 ;
+}
+.dashboardTab2{
+    padding: 20px 24px;
+    border: 1px solid black;
+    
+    
+
+}
+.applicationTable{
+    color: var(--Gray-900, #101828);
+
+/* Text lg/Medium */
+    font-family: var(--primaryFont);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 155.556% */
+}
+.searchBox input{
+    padding: 10px 14px;
+    width: 372px;
+    
+    outline: none;
+}
+::placeholder{
+    color: var(--Gray-500, var(--colors-gray-light-mode-500, #667085));
+
+/* Text md/Regular */
+    font-family: var(--primaryFont);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.searchBox{
+    position: relative;
+    border: none;
+}
+.searchIcon{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    border: none;
+    
+}
+.tab1{
+    padding: 13px 0;
+    width: 20%;
+
+}
+.tab2{
+    padding: 13px 0;
+    width: 30%;
+
+}
+.tab3{
+    padding: 13px 0;
+    width: 10%;
+
+}
+.tab4{
+    padding: 13px 0;
+    width: 18%;
+
+}
+.tab5{
+    padding: 13px 0;
+    width: 22%;
+
+}
+.dashboardTab2{
+    background: var(--White, #FFF);
+}
+.select select{
+
+    outline: none;
+}
+.dot1{
+    color: #0D6EFD;
+    background: #EAECF0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+
+.previous,
+.next{
+    color: var(--Gray-700, #344054);
+    font-family: var(--primaryFont);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    transition: 0.5s;
+    
+}
+.previous:hover{
+    background-color: #d5d7db;
+
+}
+.next:hover{
+    background-color: #d5d7db;
+
+}
+.plus2 img{
+    width: 24px;
+}
+.section h5{
+    margin-bottom: 10px;
+    color: var(--gray-400, #A1A1AA);
+    font-family: var(--primaryFont);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 163.636% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.iconCnt img{
+    width: 20px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.iconCnt .cnt{
+    color: var(--Gray-700, #495057);
+    font-family: var(--primaryFont);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px; /* 131.25% */
+}
+.iconCnt{
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 6px;
+   
+}
+.cancelBtn{
+    display: none;
+}
+/** DashBoard Section ends here */

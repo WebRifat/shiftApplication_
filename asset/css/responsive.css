@@ -1,0 +1,271 @@
+@media (max-width:991px){
+    .profileInfo{
+        position: relative;
+    }
+    .profileName{
+        position: absolute;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        background-color: white;
+        top: 53px;
+        right: 25px;
+        width: 200px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+    .profileName h5{
+        
+        font-size: 12px;
+        
+    }
+    .profileName p{
+        
+        font-size: 9px;
+    
+    }
+    .info{
+        transform: translateX(-60%);
+    
+        top: 0;
+        transform: scale(0);
+        left: -460%;
+        /* display: none; */
+    }
+    nav.active .info{
+        transform: scale(1);
+        top: 83px;
+    }
+    .profileName{
+        transform: scale(0);
+        transition: 0.4s;
+    }
+    .activated .profileName{
+        transform: scale(1);
+        transition: 1s;
+    }
+    aside{
+        bottom: 0;
+        transform: translateX(-100%);
+        transition: 0.5s;
+        
+    }
+    aside.isactive{
+        transform: translate(0%);
+        transition: 1s;
+    
+    }
+    .cancelBtn{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .dashBoardTable .button{
+        margin-top: 20px;
+    }
+    .tab1{
+        padding: 5px 0;
+        
+        width: 200%;
+    
+    }
+    .tab2{
+        padding: 5px 0;
+        
+        width: 300%;
+    
+    }
+    .tab3{
+        padding: 5px 0;
+        
+        width: 100%;
+    
+    }
+    .tab4{
+        padding: 5px 0;
+        
+        width: 180%;
+    
+    }
+    .tab5{
+        padding: 5px 0;
+        
+        width: 220%;
+    
+    }
+ 
+}
+
+@media((max-width:575px)){
+    .searchBox input{
+        
+        max-width: 200px;
+        ;
+        
+        
+    }
+    .tab1{
+        padding: 5px 0;
+        font-size: 10px;
+        text-align: left;
+        padding-right: 5px;
+    
+    }
+    .tab2{
+        padding: 5px 0;
+        font-size: 12px;
+        text-align: left;
+        padding-right: 5px;
+    
+    }
+    .tab3{
+        padding: 5px 0;
+        font-size: 10px;
+        text-align: left;
+        padding-right: 5px;
+        
+    
+    }
+    .tab4{
+        padding: 5px 0;
+        font-size: 10px;
+        text-align: left;
+        padding-right: 5px;
+        
+    
+    }
+    .tab5{
+        padding: 5px 0;
+        font-size: 10px;
+        text-align: left;
+        padding-right: 5px;
+       
+    
+    }
+    .previous,
+    .next{
+    
+    margin-bottom: 10px;
+    }
+    .dot1{
+   
+    font-size: 10px;
+    margin: 0 5px;
+    margin-bottom: 10px;
+    background-color: transparent;
+
+}
+.applicationBtn2{
+    width: 200px;
+   
+}
+.logo2 img{
+       
+    margin-right: 3px;
+
+    
+}
+.logo2 h4{
+    
+    font-size: 16px;
+    
+}
+
+}
+@media((min-width:576px) and (max-width:767px)){
+    .tab1{
+      
+        margin-right: 10px;
+    
+    }
+    .tab2{
+       
+        margin-right: 10px;
+    
+    }
+    .tab3{
+        
+        margin-right: 10px;
+        
+    
+    }
+    .tab4{
+        
+        margin-right: 10px;
+        
+    
+    }
+    .tab5{
+        
+        margin-right: 10px;
+       
+    
+    }
+    .previous,
+    .next{
+    
+    margin-bottom: 10px;
+    }
+    .dot1{
+   
+    
+    margin: 0 5px;
+    margin-bottom: 10px;
+   
+
+}
+    
+
+}
+@media((min-width:768px) and (max-width:991px)){
+
+    .previous,
+    .next{
+    
+    margin-bottom: 10px;
+    }
+    .dot1{
+   
+    
+    margin: 0 5px;
+    margin-bottom: 10px;
+   
+    }
+    
+
+}
+
+@media ((min-width:992px) and (max-width:1075px)){
+    aside{
+        
+        max-width: 250px;
+        
+    }
+    .logo2 img{
+       
+        margin-right: 6px;
+    
+        
+    }
+    .logo2 h4{
+        
+        font-size: 22px;
+        
+    }
+    .applicationBtn2{
+        width: 200px;
+       
+    }
+
+}
+
+@media ((min-width:1076px) and (max-width:1320px)){
+    aside{
+        
+        max-width: 270px;
+        
+    }
+}
